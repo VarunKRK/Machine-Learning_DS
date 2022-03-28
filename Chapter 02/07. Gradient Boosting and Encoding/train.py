@@ -17,7 +17,7 @@ def train_models(x_train, y_train):
     rf = rf.fit(x_train, y_train)
    
 
-    gbt = GradientBoostingRegressor()
+    gbt = GradientBoostingRegressor(random_state=0)
     gbt = gbt.fit(x_train, y_train)
     
 
